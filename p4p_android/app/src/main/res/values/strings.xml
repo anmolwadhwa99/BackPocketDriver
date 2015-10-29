@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Back Pocket Driver</string>
+    <string name="title_activity_register_user">Register</string>
+    <string name="title_activity_log_in">Safe Driver</string>
+    <string name="title_activity_driver_menu">DriverMenu</string>
+    <string name="duration_fragment">Duration</string>
+    <string name="distance_fragment">Distance</string>
+    <string name="average_speed_fragment">Average Speed</string>
+    <string name="activity_journey_details">Journey Details</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_summary_of_statistics">Duration Summary</string>
+    <string name="individual_journey_statistics"> Individual Journey Statistics Activity</string>
+    <string name="title_activity_distance_summary">Distance Summary</string>
+    <string name="title_activity_weather_summary">Average Speed Summary</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="username_hint">Enter your user name</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="first_name_hint">Enter your first name</string>
+    <string name="last_name_hint">Enter your last name</string>
+    <string name="password_again_hint">Enter your password again</string>
+    <string name="login_button_name">Login</string>
+    <string name="register_button_name">Sign up</string>
+    <string name="settings_button">Settings</string>
+    <string name="log_book_button">Log Book</string>
+    <string name="driving_stats_button">Driving Statistics</string>
+    <string name="weather_spinner">Weather</string>
+    <string name="time_of_day_spinner">Time of Day</string>
+    <string name="road_type_spinner">Road Type</string>
+    <string name="speed_limit_spinner">Speed Limit</string>
+    <string name="result">Result</string>
+    <string name="logout_button">Log Out</string>
+    <string name="driver_log">Driver Log</string>
+    <string name="date_journey_details">Date:</string>
+    <string name="distance_journey_details">Distance:</string>
+    <string name="duration_journey_details">Duration:</string>
+    <string name="weather_journey_details">Weather:</string>
+    <string name="view_journey_stats">Journey Statistics</string>
+    <string name="result_speed">Speed</string>
+    <string name="result_duration">Duration</string>
+    <string name="result_distance">Distance</string>
+    <string name="summary">Summary</string>
+    <string name="view_map">Map</string>
+    <string name="view_statistics">Statistics</string>
+    <string name="trip_overview">Trip Overview</string>
+    <string name="reset">Reset</string>
+
+
+
+    <string-array name="weather_array">
+        <item>Any Condition</item>
+        <item>Fine</item>
+        <item>Rain</item>
+        <item>Drizzle</item>
+        <item>Fog</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="time_of_day_array">
+        <item>Anytime</item>
+        <item>Day</item>
+        <item>Night</item>
+    </string-array>
+
+    <string-array name="road_type_array">
+        <item>Any Road Type</item>
+        <item>Urban</item>
+        <item>Rural</item>
+        <item>Motorway</item>
+    </string-array>
+
+    <string-array name="speed_limit_array">
+        <item>Any Speed</item>
+        <item>20 km/h</item>
+        <item>50 km/h</item>
+        <item>60 km/h</item>
+        <item>80 km/h</item>
+        <item>100 km/h</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
+
+</resources>

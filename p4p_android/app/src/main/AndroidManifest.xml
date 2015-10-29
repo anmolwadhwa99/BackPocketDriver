@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.p4p.backpocketdriver.driverlog" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="org.p4p.backpocketdriver.driverlog.locationapi.maps.permission.MAPS_RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bmw"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterUserActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_register_user"
+            android:parentActivityName=".activities.MainActivity" >
+        </activity>
+        <activity
+            android:name=".activities.DriverMenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.DrivingStatisticsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/driving_stats_button"
+            android:parentActivityName=".activities.DriverMenuActivity" >
+        </activity>
+        <activity
+            android:name=".activities.DriverLogActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/driver_log"
+            android:parentActivityName=".activities.DriverMenuActivity" >
+        </activity>
+        <activity
+            android:name=".activities.JourneyDetailsActivity"
+            android:label="@string/activity_journey_details"
+            android:parentActivityName=".activities.DriverLogActivity" >
+        </activity>
+        <activity
+            android:name=".activities.IndividualJourneyStatisticsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/view_journey_stats" >
+        </activity>
+        <activity
+            android:name=".google_maps.MapsActivity"
+            android:label="@string/title_activity_maps" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDvZORMlQd-QzVDLb3uEYUIF_j1c9wSFS8" />
+
+        <activity
+            android:name=".activities.DurationSummary"
+            android:label="@string/title_activity_summary_of_statistics"
+            android:parentActivityName=".activities.DrivingStatisticsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.p4p.backpocketdriver.driverlog.activities.DrivingStatisticsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DistanceSummary"
+            android:label="@string/title_activity_distance_summary"
+            android:parentActivityName=".activities.DrivingStatisticsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.p4p.backpocketdriver.driverlog.activities.DrivingStatisticsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AverageSpeedSummary"
+            android:label="@string/title_activity_weather_summary"
+            android:parentActivityName=".activities.DrivingStatisticsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.p4p.backpocketdriver.driverlog.activities.DrivingStatisticsActivity" />
+        </activity>
+    </application>
+
+</manifest>

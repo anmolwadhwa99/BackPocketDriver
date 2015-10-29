@@ -1,0 +1,101 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="org.p4p.backpocketdriver.driverlog.fragments.totalstatistics.DurationFragment"
+        android:background="@color/cream">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/road_type_spinner"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/individual_distance_road_type"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/speed_limit_spinner"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/individual_distance_speed_limit"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_individual_distance"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/result"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/background_blue"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/result_individual_distance"
+                android:layout_height="wrap_content"
+                android:layout_width="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_individual_distance_reset"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/reset"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/background_blue"/>
+
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

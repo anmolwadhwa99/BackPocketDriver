@@ -1,0 +1,143 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.p4p.backpocketdriver.driverlog.activities.JourneyDetailsActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/journey_activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/journey_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginBottom="30dp"/>
+
+
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/date_journey_details"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/date_journey_details"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/distance_journey_details"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/distance_journey_details"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/duration_journey_details"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/duration_journey_details"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/weather_journey_details"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/weather_journey_details"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/view_journey_stats"
+                style="?android:textAppearanceSmall"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/view_statistics"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/background_blue"/>
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:layout_marginTop="40dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/view_map"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/background_blue"
+                android:onClick="loadMap"/>
+
+
+
+        </TableRow>
+    </TableLayout>
+
+
+</ScrollView>
